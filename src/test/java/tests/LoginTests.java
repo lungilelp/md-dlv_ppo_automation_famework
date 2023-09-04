@@ -1,6 +1,8 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import utils.listeners.BaseTest;
 
 import java.lang.reflect.Method;
 
@@ -12,10 +14,10 @@ public class LoginTests extends BaseTest {
         //ExtentReports Description
         startTest(method.getName(), "Invalid Login Scenario with invalid username and password.");
 
-        loginPage
-                .goToMakolaDLV()
-                .login("ABZB107", "P@ssword123")
-                .loginToPPOAsServiceAgent("onur@swtestacademy.com", "111222334443313");
+            loginPage
+                    .goToMakolaDLV()
+                    .login("ABZB107", "P@ssword123");
+            Assert.assertEquals(driver.getTitle(),"Morongwa");
     }
 
 //    @Test(priority = 1, description = "Invalid Login Scenario with empty username and password.")

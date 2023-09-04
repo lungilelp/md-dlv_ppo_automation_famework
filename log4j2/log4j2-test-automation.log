@@ -8,3 +8,173 @@
 [INFO ] 2023-09-01 00:34:24.667 [main] Log - Tests is starting!
 [INFO ] 2023-09-01 00:34:29.867 [main] Log - The current working class: pages.LoginPage
 [INFO ] 2023-09-01 00:34:30.109 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 00:39:34.439 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 09:06:12.923 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 09:06:26.884 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 09:06:27.912 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 09:23:16.003 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 09:23:30.605 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 09:23:31.568 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 09:23:33.853 [main] Log - Trying to writeText to: 
+element locator:'By.id: username,
+text :'ABZB107' 
+[INFO ] 2023-09-01 09:23:36.902 [main] Log - Trying to writeText to: 
+element locator:'By.id: password,
+text :'P@ssword123' 
+[INFO ] 2023-09-01 09:23:39.858 [main] Log - Trying to writeText to: 
+element locator:'By.id: username,
+text :'onur@swtestacademy.com' 
+[INFO ] 2023-09-01 09:28:40.213 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 09:31:03.018 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 09:31:14.247 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 09:31:14.897 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 09:31:16.698 [main] Log - Trying to writeText to textbox: 
+	locator:'By.id: username,
+	text :'ABZB107' 
+[INFO ] 2023-09-01 09:31:18.121 [main] Log - Trying to writeText to textbox: 
+	locator:'By.id: password,
+	text :'P@ssword123' 
+[INFO ] 2023-09-01 09:31:18.240 [main] Log - Trying to click to element: 
+	target locator:'By.id: kc-login,
+	confirmation element :'By.id: welcome' 
+[INFO ] 2023-09-01 09:31:20.110 [main] Log - Trying to writeText to textbox: 
+	locator:'By.id: username,
+	text :'onur@swtestacademy.com' 
+[INFO ] 2023-09-01 09:36:20.606 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 09:41:04.224 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 09:41:17.237 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 09:41:18.100 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 09:41:22.769 [main] Log - click to element successful: 
+	target locator:'By.id: kc-login,
+
+[INFO ] 2023-09-01 09:43:41.993 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 09:43:53.163 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 09:43:53.862 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 09:43:57.483 [main] Log - click to element successful: 
+	target locator:		'By.id: kc-login,
+
+[INFO ] 2023-09-01 09:51:21.323 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 09:51:33.920 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 09:51:34.885 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 09:51:40.560 [main] Log - click to element successful: 
+	target locator:____'By.id: kc-login__
+
+[INFO ] 2023-09-01 09:55:22.380 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 09:55:36.049 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 09:55:36.504 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 09:55:40.621 [main] Log - click to element successful: 
+	target locator:____'By.id: kc-login__
+
+[INFO ] 2023-09-01 09:55:42.249 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 10:00:27.442 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 10:00:44.085 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 10:00:45.243 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 10:00:53.991 [main] Log - click to element successful: 	target locator:____'By.id: kc-login__
+
+[INFO ] 2023-09-01 10:00:56.582 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 11:04:12.430 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 11:04:25.269 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 11:04:25.883 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 11:04:30.801 [main] Log - pages.BasePageto element successful: Element locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 11:04:32.977 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 11:11:38.144 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 11:11:55.067 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 11:11:56.165 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 11:12:01.162 [main] Log - clickto element successful: Element locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 11:12:02.858 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 11:32:13.528 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 11:32:20.951 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 11:32:21.305 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 11:32:25.435 [main] Log - click element successfulElement locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 11:32:26.791 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 11:59:02.722 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 11:59:19.900 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 11:59:20.552 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 11:59:24.777 [main] Log - click element successfulElement locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 12:00:27.122 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 12:01:52.116 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 12:02:08.828 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 12:02:09.769 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 12:02:14.473 [main] Log - click element successfulElement locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 12:02:16.279 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 12:04:37.739 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 12:04:52.953 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 12:04:53.441 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 12:04:57.427 [main] Log - click element successfulElement locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 12:04:59.622 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 14:18:26.227 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 14:18:34.740 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 14:18:34.991 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 14:18:36.820 [main] Log - Entered method  : login
+[INFO ] 2023-09-01 14:18:36.825 [main] Log - Entered method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:18:38.209 [main] Log - Entered method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:18:38.328 [main] Log - Entered method  : click
+[INFO ] 2023-09-01 14:18:38.329 [main] Log - Entered method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:18:38.998 [main] Log - click element successfulElement locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 14:18:39.002 [main] Log - Entered method  : isEnabled
+[INFO ] 2023-09-01 14:18:39.805 [main] Log - Entered method  : isEnabled
+[INFO ] 2023-09-01 14:18:40.365 [main] Log - Entered method  : SetScriptTimeout
+[INFO ] 2023-09-01 14:18:40.385 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 14:26:16.929 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 14:26:24.787 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 14:26:25.238 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 14:26:28.202 [main] Log - Current method  : login
+[INFO ] 2023-09-01 14:26:28.206 [main] Log - Current method  : writeText
+[INFO ] 2023-09-01 14:26:28.210 [main] Log - Current method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:26:29.914 [main] Log - writeText element successfulElement locator: 'By.id: username'
+
+[INFO ] 2023-09-01 14:26:29.963 [main] Log - ABZB107 element successfulElement locator: 'By.id: username'
+
+[INFO ] 2023-09-01 14:26:29.963 [main] Log - Current method  : writeText
+[INFO ] 2023-09-01 14:26:29.963 [main] Log - Current method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:26:30.000 [main] Log - writeText element successfulElement locator: 'By.id: password'
+
+[INFO ] 2023-09-01 14:26:30.066 [main] Log - P@ssword123 element successfulElement locator: 'By.id: password'
+
+[INFO ] 2023-09-01 14:26:30.070 [main] Log - Current method  : click
+[INFO ] 2023-09-01 14:26:30.071 [main] Log - Current method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:26:30.611 [main] Log - click element successfulElement locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 14:26:30.615 [main] Log - Current method  : isEnabled
+[INFO ] 2023-09-01 14:26:31.525 [main] Log - Current method  : isEnabled
+[INFO ] 2023-09-01 14:26:32.090 [main] Log - Current method  : SetScriptTimeout
+[INFO ] 2023-09-01 14:26:32.107 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 14:39:28.389 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 14:39:35.739 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 14:39:36.033 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 14:39:38.455 [main] Log - Tests are ending!
+[INFO ] 2023-09-01 14:41:39.315 [main] Log - Tests is starting!
+[INFO ] 2023-09-01 14:41:46.603 [main] Log - The current working class: pages.LoginPage
+[INFO ] 2023-09-01 14:41:46.864 [main] Log - Opening Makola DLV
+[INFO ] 2023-09-01 14:41:48.837 [main] Log - Current method  : login
+[INFO ] 2023-09-01 14:41:48.840 [main] Log - Current method  : writeText
+[INFO ] 2023-09-01 14:41:48.843 [main] Log - Current method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:41:48.847 [main] Log - Current method  : isElementDisplayed
+[INFO ] 2023-09-01 14:41:50.402 [main] Log - writeText element successfulElement locator: 'By.id: username'
+
+[INFO ] 2023-09-01 14:41:50.445 [main] Log - ABZB107 element successfulElement locator: 'By.id: username'
+
+[INFO ] 2023-09-01 14:41:50.445 [main] Log - Current method  : writeText
+[INFO ] 2023-09-01 14:41:50.445 [main] Log - Current method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:41:50.445 [main] Log - Current method  : isElementDisplayed
+[INFO ] 2023-09-01 14:41:50.477 [main] Log - writeText element successfulElement locator: 'By.id: password'
+
+[INFO ] 2023-09-01 14:41:50.529 [main] Log - P@ssword123 element successfulElement locator: 'By.id: password'
+
+[INFO ] 2023-09-01 14:41:50.532 [main] Log - Current method  : click
+[INFO ] 2023-09-01 14:41:50.533 [main] Log - Current method  : waitForElementToBeVisible
+[INFO ] 2023-09-01 14:41:50.533 [main] Log - Current method  : isElementDisplayed
+[INFO ] 2023-09-01 14:41:51.043 [main] Log - click element successfulElement locator: 'By.id: kc-login'
+
+[INFO ] 2023-09-01 14:41:51.046 [main] Log - Current method  : waitForElementToBeDone
+[INFO ] 2023-09-01 14:41:51.050 [main] Log - Current method  : isEnabled
+[INFO ] 2023-09-01 14:41:51.793 [main] Log - Current method  : isEnabled
+[INFO ] 2023-09-01 14:41:52.343 [main] Log - Current method  : SetScriptTimeout
+[INFO ] 2023-09-01 14:41:52.356 [main] Log - Tests are ending!
