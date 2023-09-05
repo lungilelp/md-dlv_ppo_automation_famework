@@ -1,14 +1,8 @@
 package Utilities.listeners;
 
-import Utilities.DatabaseUtil;
-import Utilities.ReportingUtil;
 import config.ConfigReader;
 import config.Settings;
 import org.testng.*;
-
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 
 /**
  * @author Jonathan Mbuyi Tshitenda [ ABJT439 ]

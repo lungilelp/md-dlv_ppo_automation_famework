@@ -5,9 +5,7 @@ import Utilities.api.APIUtil;
 import base.BasePage;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITest;
 import utils.extentreports.ExtentTestManager;
 import utils.logs.Log;
 

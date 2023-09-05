@@ -28,8 +28,8 @@ public class CreatePacs002XML extends BasePage {
     public static String strPacs002PayloadForSingleTxs = null;
     public static String strPacs002PayloadForMultipleTxs = null;
 
-    String strPacs008EndToEndIDs1 = Validate1stPACS008Module.strPacs008EndToEndIdForOffUsArray[0];//Get EndToEndId from Pain001 validations
-    String strPacs008EndToEndIDs2 = Validate1stPACS008Module.strPacs008EndToEndIdForOffUsArray[1];//Get EndToEndId from Pain001 validations
+    String strPacs008EndToEndIDs1 = strPacs008EndToEndIdForOffUsArray[0];//Get EndToEndId from Pain001 validations
+    String strPacs008EndToEndIDs2 = strPacs008EndToEndIdForOffUsArray[1];//Get EndToEndId from Pain001 validations
 
     @Test
     public void createPacs002XMLForSingleTxs(String strCurrentPaymentID ,String fileName,String ExpectedFirstPacs002FIToFIPmtStsRptTxInfAndStsTxSts,String ExpectedFirstPacs002FIToFIPmtStsRptTxInfAndStsStsRsnInfRsnCd) throws IOException

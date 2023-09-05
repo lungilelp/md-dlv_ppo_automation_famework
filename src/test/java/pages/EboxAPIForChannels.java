@@ -31,8 +31,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static utils.extentreports.ExtentTestManager.codeLogsXML;
-
 
 /** DLV Automation Team created 10/08/2021 */
 

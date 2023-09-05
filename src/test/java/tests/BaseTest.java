@@ -7,9 +7,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import pages.LoginPage;
 import utils.logs.Log;
-
+import pages.LoginPage;
 public class BaseTest {
     public WebDriver driver;
     public LoginPage loginPage;

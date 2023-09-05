@@ -1,19 +1,15 @@
 package listeners;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.*;
 import tests.BaseTest;
 import utils.extentreports.ExtentManager;
-import utils.extentreports.ExtentTestManager;
 import utils.logs.Log;
 
 import java.util.Objects;
 
-import static base.BasePage.globalTestCaseScenarioType;
 import static utils.extentreports.ExtentTestManager.getTest;
 
 public class TestListener extends BaseTest implements ITestListener {

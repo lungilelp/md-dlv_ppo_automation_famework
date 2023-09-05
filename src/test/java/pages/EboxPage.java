@@ -1201,11 +1201,11 @@ public class EboxPage extends BasePage {
             //Get the number of table/div preceding the main statement table
             int intTableCount = countTableDivs();
 
-            transactionCount = driver.findElements(By.xpath(".//div[contains(text(),'" + systemReference + "')]/parent::td//preceding-sibling::td//ancestor::tr")).size();
+            transactionCount = driver.findElements(By.xpath(".//div[contains(text(),'" + BasePage.systemReference + "')]/parent::td//preceding-sibling::td//ancestor::tr")).size();
             //transactionCount = driver.findElements(By.xpath(".//*[@id='StatementForm']/div["+intTableCount+"]/child::div/descendant::div[contains(text(),'" + strWorkflowReferenceUniqueTxt + "')]")).size();
 
             //Check postings
-            postingsAccountingCalculatorInwards(DebtorControlSum, 2, systemReference);
+            postingsAccountingCalculatorInwards(DebtorControlSum, 2, BasePage.systemReference);
 
             //Set validations results
             strDebitAccountTransactionsAmountValidations = strDebitAccountAmountAssertion;
@@ -1254,7 +1254,7 @@ public class EboxPage extends BasePage {
             int intTableCount = countTableDivs();
 
             //Get the count of transaction with our unique reference on the table
-            int transactionCount = driver.findElements(By.xpath(".//div[contains(text(),'" + systemReference + "')]/parent::td//preceding-sibling::td//ancestor::tr")).size();
+            int transactionCount = driver.findElements(By.xpath(".//div[contains(text(),'" + BasePage.systemReference + "')]/parent::td//preceding-sibling::td//ancestor::tr")).size();
 
             /**Iterate through the number of transaction found to get all the amounts and add them up*/
             //==================Check for transaction amounts=======================================================
@@ -1264,8 +1264,8 @@ public class EboxPage extends BasePage {
 
             //Loop through the Ebox table to get the total amount for the creditor(s)
             do {
-                WebElement eboxSuspenseAccountCreditXpathAxis = driver.findElement(By.xpath("(.//div[contains(text(),'" + systemReference + "')]/parent::td//following-sibling::td[2])[position()=" + i + "]"));
-                highLighterMethod(By.xpath("(.//div[contains(text(),'" + systemReference + "')]/parent::td//following-sibling::td[2])[position()=" + i + "]"));
+                WebElement eboxSuspenseAccountCreditXpathAxis = driver.findElement(By.xpath("(.//div[contains(text(),'" + BasePage.systemReference + "')]/parent::td//following-sibling::td[2])[position()=" + i + "]"));
+                highLighterMethod(By.xpath("(.//div[contains(text(),'" + BasePage.systemReference + "')]/parent::td//following-sibling::td[2])[position()=" + i + "]"));
 
                 //Get the creditor amount from Ebox and remove non-numeric characters
                 String strSuspenseAccountCreditAmount = eboxSuspenseAccountCreditXpathAxis.getText().replaceAll("[^a-zA-Z0-9\\\\._-]", "");
@@ -1420,13 +1420,13 @@ public class EboxPage extends BasePage {
             //TODO:: Fix the Creditor / Receiver statement validation using unique narration from correct window when the payments request was received - DONE
             //Get the count of transaction with our unique reference on the table
             if(strPaymentRequestWindow.equalsIgnoreCase("Current")){
-                transactionCount = driver.findElements(By.xpath(".//div[contains(text(),'" + strUniqueTransactionNarration +"')]/parent::td//preceding-sibling::td//ancestor::tr")).size();
+                transactionCount = driver.findElements(By.xpath(".//div[contains(text(),'" + BasePage.strUniqueTransactionNarration +"')]/parent::td//preceding-sibling::td//ancestor::tr")).size();
 
                 /**Iterate through the number of transaction found to get all the amounts and add them up*/
                 if(CreditorDestinationRef_1.equalsIgnoreCase("1Line")){
-                    postingsAccountingCalculatorInwards(DebtorControlSum,3,strUniqueTransactionNarration);
+                    postingsAccountingCalculatorInwards(DebtorControlSum,3, BasePage.strUniqueTransactionNarration);
                 }else {
-                    postingsAccountingCalculatorInwards(DebtorControlSum,3,strUniqueTransactionNarration.substring(0,146));}
+                    postingsAccountingCalculatorInwards(DebtorControlSum,3, BasePage.strUniqueTransactionNarration.substring(0,146));}
 
             }else{
                 transactionCount = driver.findElements(By.xpath(".//div[contains(text(),'" + strEboxNarrative +"')]/parent::td//preceding-sibling::td//ancestor::tr")).size();
