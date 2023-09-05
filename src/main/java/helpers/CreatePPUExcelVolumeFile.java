@@ -1,7 +1,8 @@
 package helpers;
 
-import com.jmt.framework.base.Base;
-import com.jmt.framework.base.LocalDriverContext;
+import Utilities.GeneralUtilities;
+import base.BasePage;
+import helpers.CreateMultiDebitMultiCreditPain001;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.util.CellReference;
@@ -10,16 +11,23 @@ import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
-import Utilities.GeneralUtilities;
+import org.openqa.selenium.WebDriver;
+import utils.logs.Log;
 
 import java.io.*;
 import java.util.Objects;
 
 import static Utilities.ExcelUtil.currentDir;
-import static java.lang.Thread.sleep;
 import static Utilities.GeneralUtilities.randomFixedNumber;
+import static java.lang.Thread.sleep;
 
-public class CreatePPUExcelVolumeFile extends Base {
+public class CreatePPUExcelVolumeFile extends BasePage {
+    public CreatePPUExcelVolumeFile(WebDriver driver) {
+
+        super(driver);
+        Log.info("The current working class: "+this.getClass().getName());
+    }
+
     public String ppufilename = null;
     public String ppufilepath = null;
     GeneralUtilities generic = new GeneralUtilities();
@@ -27,7 +35,7 @@ public class CreatePPUExcelVolumeFile extends Base {
     FileOutputStream fos;
     XSSFWorkbook workbook;
     XSSFSheet sheet;
-    CreateMultiDebitMultiCreditPain001 createfile = new CreateMultiDebitMultiCreditPain001();
+    CreateMultiDebitMultiCreditPain001 createfile = new CreateMultiDebitMultiCreditPain001(driver);
     double controlSum = 0.0;
     /** Methods*/
 
@@ -219,7 +227,7 @@ public class CreatePPUExcelVolumeFile extends Base {
             wb.write(out);
             out.close();
             //choose file
-            LocalDriverContext.getRemoteWebDriver().findElement(By.id("file")).sendKeys(Input_String);
+            driver.findElement(By.id("file")).sendKeys(Input_String);
             sleep(10000);
         }
         catch(Exception e){
@@ -376,7 +384,7 @@ public class CreatePPUExcelVolumeFile extends Base {
 //            out.close();
 //            //choose file
 //            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("file")));
-//            LocalDriverContext.getRemoteWebDriver().findElement(By.id("file")).sendKeys(ppufilepath+ppufilename+".xlsx");
+//            driver.findElement(By.id("file")).sendKeys(ppufilepath+ppufilename+".xlsx");
 //
 //        }
 //        catch(Exception e){

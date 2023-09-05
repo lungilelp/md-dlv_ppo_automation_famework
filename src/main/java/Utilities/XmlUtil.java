@@ -17,6 +17,8 @@ import org.xml.sax.SAXException;
 import org.xmlunit.builder.DiffBuilder;
 import org.xmlunit.diff.*;
 import org.xmlunit.diff.Diff;
+import utils.logs.Log;
+
 import java.io.IOException;
 
 import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;

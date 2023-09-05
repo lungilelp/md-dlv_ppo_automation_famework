@@ -126,7 +126,7 @@ public class PaymentSearchPage extends BasePage {
 
     //******************************************************************************************************************
     APIUtil apiUtil = new APIUtil(driver);
-    OutwardCreditHandlingModule outwardCreditHandlingModule = new OutwardCreditHandlingModule();
+    OutwardCreditHandlingModule outwardCreditHandlingModule = new OutwardCreditHandlingModule(driver);
 
     //***********************************STEPS**************************************************************************
 

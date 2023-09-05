@@ -8,6 +8,7 @@ import Utilities.api.APIUtil;
 import config.Settings;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.methods.GetMethod;
+import org.openqa.selenium.WebDriver;
 import utils.extentreports.ExtentTestManager;
 import utils.logs.Log;
 
@@ -21,7 +22,7 @@ import static utils.extentreports.ExtentTestManager.codeLogsXML;
  * @package helpers
  */
 public class OutwardCreditHandlingModule extends BasePage {
-    public OutwardCreditHandlingModule() {
+    public OutwardCreditHandlingModule (WebDriver driver) {
 
         super(driver);
         Log.info("The current working class: "+this.getClass().getName());

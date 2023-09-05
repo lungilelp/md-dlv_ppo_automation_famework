@@ -59,7 +59,7 @@ public class BulkPaymentSearchPage extends BasePage {
     String InstructionIDSFI = null;
 
 
-    OutwardCreditHandlingModule outwardCreditHandlingModule = new OutwardCreditHandlingModule();
+    OutwardCreditHandlingModule outwardCreditHandlingModule = new OutwardCreditHandlingModule(driver);
     //***********************************STEPS**************************************************************************
     //******************************************************************************************************************
 

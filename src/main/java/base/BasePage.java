@@ -458,7 +458,7 @@ public class BasePage {
             int count =1000;
             long startTime = System.currentTimeMillis(); //fetch starting time
 
-            while ((System.currentTimeMillis() - startTime) < 300 * count) {
+            while ((System.currentTimeMillis() - startTime) < 30 * count) {
 
 //                if (!isElementDisplayed(elementLocation)) {
 //

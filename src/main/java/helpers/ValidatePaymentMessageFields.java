@@ -16,7 +16,7 @@ import java.util.Calendar;
 
 import static utils.extentreports.ExtentTestManager.codeLogsXML;
 
-public class ValidatePaymentMessageFields  extends BasePage implements ITest {
+public class ValidatePaymentMessageFields  extends BasePage  {
 
     public ValidatePaymentMessageFields(WebDriver driver) {
 
@@ -29,9 +29,9 @@ public class ValidatePaymentMessageFields  extends BasePage implements ITest {
     private ThreadLocal<String> testName = new ThreadLocal<>();
 
     APIUtil apiUtil = new APIUtil(driver);
-    loginPage = new LoginPage(driver);
-    welcomePage = new WelcomePage(driver);
-    bulkPaymentSearchPage = new BulkPaymentSearchPage();
+//    loginPage = new LoginPage(driver);
+//    welcomePage = new WelcomePage(driver);
+//    bulkPaymentSearchPage = new BulkPaymentSearchPage();
 
     //Future Date,Present Date or Past Date formation - Requested Execution Date,Requested Collection Date
     public static String formattingInputDate(String inputDate, String dateFormat) {
@@ -54,7 +54,7 @@ public class ValidatePaymentMessageFields  extends BasePage implements ITest {
             return new SimpleDateFormat(dateFormat).format(calendar.getTime());
         }
     }
-    /* Message Identification tag Structure Validation */
+//    /* Message Identification tag Structure Validation */
     public String validateMsgIdStructure(String messageIdentification,String name,
                                          String transactionId,String date) {
 
@@ -70,8 +70,8 @@ public class ValidatePaymentMessageFields  extends BasePage implements ITest {
             return messageIdentification + name + "/" + date + "/" + transactionId;
         }
     }
-
-    /* Verify fees Setup in teller */
+//
+//    /* Verify fees Setup in teller */
     public void verifyFeesSetup(String AccountCurrency, String AccountNumber,
                                 String AccountType, String BranchNumber, String BankCountry,
                                 String ItemCount, String PaymentMethod, String ChannelId, String ChannelReference,
@@ -101,35 +101,35 @@ public class ValidatePaymentMessageFields  extends BasePage implements ITest {
         apiUtil.PostXmlRequestPayload(chargeEnquiryRequest, BankCountry);
 
     }
-
-    public void UIVerificationForChannelPayments(String ServiceAgentCommercialOperationsUsername,String ServiceAgentCommercialOperationsPassword,
-                                                 String messageId,String correlationId,String[] paymentInfoId,String fileStatus,String[] processingStatus) throws Exception {
-        //Login to PPO as Service Agent
-        loginPage.loginToPPOAsServiceAgent(ServiceAgentCommercialOperationsUsername,
-                ServiceAgentCommercialOperationsPassword);
-        Thread.sleep(2000);
-
-        //Navigate to Bulk File Listing Screen
-        click(By.id("bulk-files"));
-        Thread.sleep(10000);
-
-        //Find & Highlight the Payment Message File Id
-        waitForElementToBeVisible(By.xpath("//*[text()='"+messageId.replaceAll("/", "")+"']"));
-        driver.findElement(By.xpath("//*[text()='" + messageId.replaceAll("/", "") + "']"));
-        highLighterMethod(By.xpath("//*[text()='" + messageId.replaceAll("/", "") + "']"));
-
-        //Validate transactions present inside payment instruction file
-        bulkPaymentSearchPage.validatePaymentInstructionBulkPaymentSearch(correlationId,paymentInfoId, fileStatus,processingStatus);
-
-        //Logout of PPO Application
-        welcomePage.logout();
-
-        driver.close();
-    }
-
-    @Override
-    public String getTestName()
-    {
-        return testName.get();
-    }
+//
+//    public void UIVerificationForChannelPayments(String ServiceAgentCommercialOperationsUsername,String ServiceAgentCommercialOperationsPassword,
+//                                                 String messageId,String correlationId,String[] paymentInfoId,String fileStatus,String[] processingStatus) throws Exception {
+//        //Login to PPO as Service Agent
+//        loginPage.loginToPPOAsServiceAgent(ServiceAgentCommercialOperationsUsername,
+//                ServiceAgentCommercialOperationsPassword);
+//        Thread.sleep(2000);
+//
+//        //Navigate to Bulk File Listing Screen
+//        click(By.id("bulk-files"));
+//        Thread.sleep(10000);
+//
+//        //Find & Highlight the Payment Message File Id
+//        waitForElementToBeVisible(By.xpath("//*[text()='"+messageId.replaceAll("/", "")+"']"));
+//        driver.findElement(By.xpath("//*[text()='" + messageId.replaceAll("/", "") + "']"));
+//        highLighterMethod(By.xpath("//*[text()='" + messageId.replaceAll("/", "") + "']"));
+//
+//        //Validate transactions present inside payment instruction file
+//        bulkPaymentSearchPage.validatePaymentInstructionBulkPaymentSearch(correlationId,paymentInfoId, fileStatus,processingStatus);
+//
+//        //Logout of PPO Application
+//        welcomePage.logout();
+//
+//        driver.close();
+//    }
+//
+//    @Override
+//    public String getTestName()
+//    {
+//        return testName.get();
+//    }
 }

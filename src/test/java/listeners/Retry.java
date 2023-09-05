@@ -1,4 +1,4 @@
-package utils.listeners;
+package listeners;
 
 import com.aventstack.extentreports.Status;
 import org.openqa.selenium.OutputType;
@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 import tests.BaseTest;
+
 
 import static utils.extentreports.ExtentTestManager.getTest;
 

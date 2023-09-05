@@ -12,9 +12,7 @@ import org.testng.AssertJUnit;
 import utils.extentreports.ExtentTestManager;
 import utils.logs.JSErrorLogs;
 import utils.logs.Log;
-
-import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
+;
 
 public class LoginPage extends BasePage {
     /**
@@ -234,7 +232,7 @@ public class LoginPage extends BasePage {
             }
         return this;}
 
-    public LoginPage login (String username , String password)
+    public void login (String username , String password)
     {
         String name = new Object(){}.getClass().getEnclosingMethod().getName();
         Log.info(BasePage.getGenericMessage(name ));
@@ -248,9 +246,9 @@ public class LoginPage extends BasePage {
             click(By.id(loginButtonId), By.id(paymentWelcomeTabId));
             SetScriptTimeout();
 
-        ;}catch(Exception e){}
+        ;}catch(Exception ignored){}
 
-    return this;}
+    }
 
 
     /**Close the session*/

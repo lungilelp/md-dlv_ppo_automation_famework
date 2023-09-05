@@ -3,9 +3,9 @@ package helpers;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import Utilities.extentReports.ExtentTestManager;
 import config.ConfigReader;
 import config.Settings;
+import utils.extentreports.ExtentTestManager;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,7 +17,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 import static Utilities.DatabaseUtil.*;
-import static Utilities.extentReports.ExtentTestManager.codeLogsXML;
+import static utils.extentreports.ExtentTestManager.codeLogsXML;
 
 public class FetchPaymentDetailsFromDB {
 
@@ -103,7 +103,7 @@ public class FetchPaymentDetailsFromDB {
 
         }catch (Exception e){
             System.out.println(e.getMessage());
-            ExtentTestManager.getTest().log(Status.FATAL, "Status=FATAL: No Records Where Found In The Database for Completed TimeStamp");
+            ExtentTestManager.getTest().log(Status.FAIL, "Status=FATAL: No Records Where Found In The Database for Completed TimeStamp");
         }
     }
 
@@ -139,7 +139,7 @@ public class FetchPaymentDetailsFromDB {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            ExtentTestManager.getTest().log(Status.FATAL, "Status=FATAL: No Records Where Found In The Database for Correlation Id");
+            ExtentTestManager.getTest().log(Status.FAIL, "Status=FATAL: No Records Where Found In The Database for Correlation Id");
         }
         return CorrelationId;
     }
@@ -192,7 +192,7 @@ public class FetchPaymentDetailsFromDB {
 
         }catch (Exception e){
             System.out.println(e.getMessage());
-            ExtentTestManager.getTest().log(Status.FATAL, "Status=FATAL: No Records Where Found In The Database for Payment Message File Status");
+            ExtentTestManager.getTest().log(Status.FAIL, "Status=FATAL: No Records Where Found In The Database for Payment Message File Status");
         }
 
         return fileStatus;

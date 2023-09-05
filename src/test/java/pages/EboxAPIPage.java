@@ -1,5 +1,6 @@
 package pages;
 
+import base.BasePage;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -18,7 +19,9 @@ import org.apache.http.ssl.SSLContextBuilder;
 import org.apache.http.ssl.SSLContexts;
 import org.apache.http.ssl.TrustStrategy;
 import org.apache.http.util.EntityUtils;
+import org.openqa.selenium.WebDriver;
 import utils.extentreports.ExtentTestManager;
+import utils.logs.Log;
 
 import javax.net.ssl.SSLContext;
 import java.io.File;
@@ -39,9 +42,13 @@ import java.util.List;
  * @date created 9/10/2019
  * @package pages
  */
-public class EboxAPIPage {
+public class EboxAPIPage extends BasePage {
 
+    public EboxAPIPage(WebDriver driver) {
 
+        super(driver);
+        Log.info("The current working class: "+this.getClass().getName());
+    }
     //class level variables
     String URL=null;
     GetMethod getMethod;
@@ -53,7 +60,7 @@ public class EboxAPIPage {
     boolean checkpoint1 = false;
     boolean checkpoint2 = false;
     boolean isTransactionDateCorrect = true;
-    OutwardCreditHandlingModule outwardCreditHandlingModule = new OutwardCreditHandlingModule();
+    OutwardCreditHandlingModule outwardCreditHandlingModule = new OutwardCreditHandlingModule(driver);
 
 
 

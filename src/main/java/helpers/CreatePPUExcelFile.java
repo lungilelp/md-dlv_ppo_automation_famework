@@ -1,13 +1,14 @@
 package helpers;
 
 
-import com.jmt.framework.base.Base;
-import com.jmt.framework.base.LocalDriverContext;
+import base.BasePage;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import Utilities.GeneralUtilities;
+import utils.logs.Log;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,7 +23,13 @@ import static Utilities.ExcelUtil.currentDir;
  * @date created 16 June 2021
  * @package helpers
  */
-public class CreatePPUExcelFile extends Base {
+public class CreatePPUExcelFile extends BasePage {
+    public CreatePPUExcelFile(WebDriver driver) {
+
+        super(driver);
+        Log.info("The current working class: "+this.getClass().getName());
+    }
+
     public String ppufilename = null;
     public String ppufilepath = null;
     GeneralUtilities generic = new GeneralUtilities();
@@ -30,7 +37,7 @@ public class CreatePPUExcelFile extends Base {
     FileOutputStream fos;
     XSSFWorkbook workbook;
     XSSFSheet sheet;
-    CreateMultiDebitMultiCreditPain001 createfile = new CreateMultiDebitMultiCreditPain001();
+    CreateMultiDebitMultiCreditPain001 createfile = new CreateMultiDebitMultiCreditPain001(driver);
 
     /** Methods*/
 
@@ -125,7 +132,7 @@ public class CreatePPUExcelFile extends Base {
             workbook.close();
 
             //choose file
-            LocalDriverContext.getRemoteWebDriver().findElement(By.id("file")).sendKeys(ppufilepath+ppufilename+".xlsx");
+            driver.findElement(By.id("file")).sendKeys(ppufilepath+ppufilename+".xlsx");
         }
         catch(Exception e){
             System.out.println(e);
@@ -239,7 +246,7 @@ public class CreatePPUExcelFile extends Base {
 
             //choose file
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("file")));
-            LocalDriverContext.getRemoteWebDriver().findElement(By.id("file")).sendKeys(ppufilepath+ppufilename+".xlsx");
+            driver.findElement(By.id("file")).sendKeys(ppufilepath+ppufilename+".xlsx");
 
         }
         catch(Exception e){
